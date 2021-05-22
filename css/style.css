@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --main-Red: hsl(0, 100%, 74%);
+    --main-Green: hsl(154, 59%, 51%);
+    --main-Blue: hsl(248, 32%, 49%);
+    --main-Dark-Blue: hsl(249, 10%, 26%);
+    --main-Grayish-Blue: hsl(246, 25%, 77%);
+    --main-font-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    Font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-font-color);
+}
+
+.contact-section {
+    min-height: 100vh;
+    display: flex;
+    background: var(--main-Red) url('/img/bg-intro-desktop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    padding: 86px 90px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side-content {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side-content h1 {
+    font-size: 44px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.right-side-content {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background: white;
+    color: var(--main-Grayish-Blue);
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bar {
+    display: flex;
+    min-width: 80%;
+    height: 50px;
+    padding: 10px 18px;
+    background: var(--main-Blue);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0px 5px rgb(0 0 0 / 40%);
+    transform: translateY(-15px);
+}
+
+.bar span {
+    color: var(--main-Grayish-Blue);
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid var(--main-Grayish-Blue);
+    outline-color: var(--main-Grayish-Blue);
+    border-radius: 10px;
+    padding: 10px 18px;
+    margin: 10px 0;
+}
+
+.form button {
+    border-radius: 8px;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    background: var(--main-Green);
+    border: none;
+    transition: all 0.6s ease;
+}
+
+.form button:hover {
+    box-shadow: inset 0 -4px rgb(0 0 0 / 10%), inset 0 4px rgb(0 0 0 / 10%);
+}
+
+.form h6 {
+    color: var(--main-Grayish-Blue);
+    font-size: 9px;
+}
+
+.form span {
+    color: var(--main-Red);
+    font-size: 9px;
+}
+
+footer {
+    display: none;
+}
+
+footer .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:700px) {
+    .contact-section {
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        background: var(--main-Red) url('/img/bg-intro-desktop.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+        min-height: 100%;
+        padding: 96px 30px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-side-content {
+        min-height: 50% !important;
+    }
+    .right-side-content {
+        min-height: 50% !important;
+    }
+    .left-side-content h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .left-side-content p {
+        margin-bottom: 0px;
+    }
+    .bar {
+        display: flex;
+        min-width: 80%;
+        height: 80px;
+        padding: 10px 18px;
+        background: var(--main-Blue);
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        border-radius: 10px;
+        align-items: center;
+        box-shadow: 0px 5px rgb(0 0 0 / 40%);
+        transform: translateY(-15px);
+        margin-top: 100px;
+    }
+}
